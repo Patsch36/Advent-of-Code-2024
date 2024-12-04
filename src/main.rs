@@ -13,5 +13,10 @@ fn main() {
     } else if day == 2 {
         challenges::day2::part1();
         challenges::day2::part2();
+    } else if day == 3 {
+        challenges::day3::part1();
+        challenges::day3::part2();
+    } else {
+        println!("Day {} not implemented yet", day);
     }
 }
