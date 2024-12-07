@@ -1,11 +1,11 @@
 mod challenges;
 mod utils;
 
-use chrono::{self, Datelike};
+// use chrono::{self, Datelike};
 
 fn main() {
     // let day = 2;
-    let day: u32 = chrono::offset::Local::now().day();
+    let day: u32 = 6; //chrono::offset::Local::now().day();
 
     match day {
         1 => {
@@ -27,6 +27,10 @@ fn main() {
         5 => {
             challenges::day5::part1();
             challenges::day5::part2();
+        }
+        6 => {
+            challenges::day6::part1();
+            challenges::day6::part2();
         }
         _ => {
             println!("Day {} not implemented yet", day);
