@@ -5,7 +5,7 @@ mod utils;
 
 fn main() {
     // let day = 2;
-    let day: u32 = 6; //chrono::offset::Local::now().day();
+    let day: u32 = 7; //chrono::offset::Local::now().day();
 
     match day {
         1 => {
@@ -31,6 +31,10 @@ fn main() {
         6 => {
             challenges::day6::part1();
             challenges::day6::part2();
+        }
+        7 => {
+            challenges::day7::part1();
+            challenges::day7::part2();
         }
         _ => {
             println!("Day {} not implemented yet", day);
